@@ -40,7 +40,7 @@ var newRow;
 
 for ( i = 0; i < data.length; i++) {
   newRow = document.createElement('tr');
-  new_row.innerHTML = data[i];
+  newRow.innerHTML = data[i];
   table.appendChild(newRow);
 }
 
