@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form factor</title>
+<link rel="stylesheet" href="reserStyle.css">
+<link rel= "stylesheet" href="style.css">
+</head>
+<body>
+  <form id="reviewForm">
+    <fieldset>
+      <label for="first">First Name: </label>
+      <input type="text" name="first" placeholder="Enter First Name" required>
+    </fieldset>
+    <fieldset>
+      <label for="last">Last Name: </label>
+      <input type="text" name="last" placeholder="Enter Last Name" required>
+    </fieldset>
+    <fieldset>
+      <label for="email">e-mail: </label>
+      <input type="email" name="email" placeholder="Enter email" required>
+    </fieldset>
+    <fieldset>
+      <p>What you like more about us?<p>
+      <label for="likesCookies">Salmon Cookies</label>
+      <input type="checkbox" name="likesCookies" value="Salmon Cookies">
+      <label for="likesService">Customer Service</label>
+      <input type="checkbox" name="likesService" value="Customer Service">
+    </fieldset>
+    <fieldset>
+     <label for="reffer">Would you reffer us to your frinds?</label>
+     <input type="radio" name="reffer" value= "YES">yes
+     <input type="radio" name="reffer" value= "NO">no
+   </fieldset>
+   <fieldset>
+    <label for="comments">Your opinion matters.</label>
+    <textarea name="comments" placeholder="Enter comments here." rows="10" cols="40"></textarea>
+   </fieldset>
+   <button id="submit-btn" type="submit">Post</button>
+
+<table>
+     <thead>
+          <td>Name</td>
+          <td>Comments</td>
+          <td>Likes</td>
+          <td>Will reffer to friends?</td>
+     </thead>
+     <tbody id="reviewsLog">
+          <!-- get input from DOM -->
+     </tbody>
+</table>
+
+</body>
+<script src="app.js"></script>
+</html>
+s
