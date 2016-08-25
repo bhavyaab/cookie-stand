@@ -33,7 +33,7 @@ for (i = 0; i < allShop.length; i++){
     '<td>' + allShop[i].name + '</td>' + '<td>' + allShop[i].minCust + '</td>' + '<td>' + allShop[i].maxCust + '</td>' + '<td>' + allShop[i].avgSale + '</td>'
   );
 }
-// console.log(data);
+// console.log(-data);
 // push data into table body of main table
 var table = document.getElementById('main_table');
 var newRow;
