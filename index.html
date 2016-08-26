@@ -5,20 +5,88 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <span><a href="index.html">Home</a></span>
-    <span><a href="location.html">Locations</a></span>
-    <span>contactUs</span>
-    <span><a href="sales.html">sales</a></span>
-  </header>
-  <main>
-    <img src="http://g01.a.alicdn.com/kf/HTB1alU1LVXXXXa7XpXXq6xXFXXXQ/It-Tounchdog-salmon-cyclone-Cu-Chi-Teddy-pet-training-leisure-snacks-in-addition-to-bad-breath.jpg" alt="cookies" height="" width="">
-    <p>Awesome <q>Salmon Cookies</q> Chocolate Chip Cookies. Made Locally.
-Delicious, responsibly sourced AND vegan, gluten-free, soy-free? You bet. We have been making  Skydottir Epic Cookies since 2010. We make our Salmon Cookies cookies with love and care in small batches, using 90%+ organic ingredients and the finest Fair Trade Certified chocolate.</p>
-<div id="location">
+<header>
+     <div class="inner">
+     <img src="http://placehold.it/200x70/000000">
+     <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="location.html">Locations</a></li>
+         <li><a href="form.html">FeedBack</a></li>
+         <li><a href="sales.html">Sales</a></li>
+     </ul>
+    </div>
+</header>
+<main>
+  <section class="hero_window">
+       <video width="960" controls>
+    <source src="http://ak8.picdn.net/shutterstock/videos/4703708/preview/stock-footage-cookie-splashing-into-milk-slow-motion.mp4" type="video/mp4">
+    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+    <!-- Your browser does not support HTML5 video. -->
+  </video>
 
+  <!-- <p>
+  Video courtesy of
+  <a href="https://github.com/codefellows/seattle-201d14/blob/master/class-09-css_wireframe_part_1/lab/assets/family.jpg?raw=true" target="_blank">bakig cookies</a>.
+  </p> -->
+    <img src="http://placehold.it/200x70/000000" alt="logo" id="logo_2">
+    <!-- <p>Awesome <q>Salmon Cookies</q> Chocolate Chip Cookies. Made Locally.
+Delicious, responsibly sourced AND vegan, gluten-free, soy-free? You bet. We have been making  Skydottir Epic Cookies since 2010. We make our Salmon Cookies cookies with love and care in small batches, using 90%+ organic ingredients and the finest Fair Trade Certified chocolate.</p> -->
+  </section>
+<div id="g_map">
+     <iframe src="https://www.google.com/maps/d/embed?mid=19xqqpyKOBpTJMiaLwt4n5TEoCt0" width="960" height="450"></iframe>
 </div>
-  </main>
+<div id="location">
+     <img src="https://github.com/codefellows/seattle-201d14/blob/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg?raw=true" width="180" height="150"alt="pike">
+     <img src="https://github.com/codefellows/seattle-201d14/blob/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg?raw=true" width="180" height="150" alt="seaTac">
+     <img src="https://github.com/codefellows/seattle-201d14/blob/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg?raw=true" width="180" height="150" alt="seaCen">
+     <img src="https://github.com/codefellows/seattle-201d14/blob/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg?raw=true" width="180" height="150" alt="capitolHill">
+     <img src="https://github.com/codefellows/seattle-201d14/blob/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg?raw=true" width="180" height="150" alt="Alki">
+</div>
+
+ <section class="feedback">
+  <form id="reviewForm">
+    <fieldset>
+      <label for="first">First Name: </label>
+      <input type="text" name="first" placeholder="Enter First Name" required>
+    </fieldset>
+    <fieldset>
+      <label for="last">Last Name: </label>
+      <input type="text" name="last" placeholder="Enter Last Name" required>
+    </fieldset>
+    <fieldset>
+      <label for="email">e-mail: </label>
+      <input type="email" name="email" placeholder="Enter email" required>
+    </fieldset>
+    <fieldset>
+      <p>What you like more about us?<p>
+      <label for="likesCookies">Salmon Cookies</label>
+      <input type="checkbox" name="likesCookies" value="Salmon Cookies">
+      <label for="likesService">Customer Service</label>
+      <input type="checkbox" name="likesService" value="Customer Service">
+    </fieldset>
+    <fieldset>
+     <label for="reffer">Would you reffer us to your frinds?</label>
+     <input type="radio" name="reffer" value= "YES">yes
+     <input type="radio" name="reffer" value= "NO">no
+   </fieldset>
+   <fieldset>
+    <label for="comments">Your opinion matters.</label>
+    <textarea name="comments" placeholder="Enter comments here." rows="10" cols="40"></textarea>
+   </fieldset>
+   <button id="submit-btn" type="submit">Post</button>
+  <table class="reviewFormTable">
+     <thead>
+          <td>Name</td>
+          <td>Comments</td>
+          <td>Likes</td>
+          <td>Will reffer to friends?</td>
+     </thead>
+     <tbody id="reviewsLog">
+          <!-- get input from DOM -->
+     </tbody>
+</table>
+ </section>
+</main>
 <body>
 <sript src="app.js"><script>
 </html>

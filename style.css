@@ -1,33 +1,56 @@
-td{
-  padding: 20px;
-  text-align: center;
-}
-table{
-  background: rgba(76, 175, 80, 0.3);
-  border: solid 2px #777;
-  border-radius: 8px;
-  
-}
-.location{
-  height: 60px;
-  width: 60px;
-  padding: 20px;
-  background-color: #888;
-  border-collapse: separate;
-  }
-div span{
-  flex-direction: row;
-}
-header{
-  padding: 20px;
-  text-align: center;
-  background-color: #F29057;
-  font-style: oblique;
-  font-size: 2em;
-  }
+/* global styles */
 body{
-  background-color: #D97E6A;
+  font-family: helvetica;
+  }
+
+a{
+  text-decoration: none;
+  color:#888;
 }
-main img{
-  padding: 4em;
+/*app style*/
+header{
+     background: #555;
+     height: 100px;
 }
+.inner{
+width: 960px;
+margin: 0 auto;
+}
+
+header img {
+     margin-top: 15px;
+     float: left;
+}
+
+header ul li{
+     display: inline-block;
+     margin: 60px;
+     margin-top: 40px;
+     }
+main{
+     width: 960px;
+     margin: 0 auto;
+     /*outline: dotted 2px orange;*/
+     }
+.hero_window{
+     position: relative;
+     /*outline: solid 3px red;*/
+}
+#hero{
+z-index: -1;
+/*position: absolute;*/
+/*outline: dotted 2px blue;*/
+}
+#logo_2{
+z-index: 1;
+position: absolute;
+/*outline: dotted 2px orange;*/
+left: 380px;
+/*margin-bottom: 175px;*/
+top: 175px;
+border-radius: 5px;
+}
+g_map{}
+/*#location{
+     margin: 20px;
+}*/
